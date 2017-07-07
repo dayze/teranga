@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    Hello
+    <div class="ui container">
+      <div class="ui segment piled center aligned">
+        <h1>Get to work now</h1>
+      </div>
+    </div>
   </div>
 </template>
 

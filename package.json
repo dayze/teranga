@@ -1,5 +1,5 @@
 {
-  "name": "grafikart-boilerplate",
+  "name": "teranga",
   "version": "0.0.1",
   "description": "",
   "main": "",
@@ -9,7 +9,7 @@
     "dev": "NODE_ENV=development node build/server.js",
     "gh": "npm run build && gh-pages -d dist"
   },
-  "author": "Grafikart <contact@grafikart.fr>",
+  "author": "Maxime & Jérémy",
   "license": "MIT",
   "dependencies": {
     "jquery": "^3.1.1",

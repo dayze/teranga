@@ -2,9 +2,9 @@
     <div id="app">
         <div id="header">
             <div id="header-bg" class="pos-rel">
-                <span class="pos-abs-middle-center">
+                <div class="pos-abs-middle-center anim-top">
                     LES POUPONS DE TERANGA
-                </span>
+                </div>
             </div>
         </div>
         <div class="ui container">

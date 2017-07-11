@@ -1,12 +1,13 @@
 <template>
     <div id="app">
         <div id="header">
-            <div id="header-bg"></div>
+            <div id="header-bg" class="pos-rel">
+                <span class="pos-abs-middle-center">
+                    LES POUPONS DE TERANGA
+                </span>
+            </div>
         </div>
         <div class="ui container">
-            <div class="ui segment piled center aligned">
-                <h1>Get to work now</h1>
-            </div>
         </div>
     </div>
 </template>

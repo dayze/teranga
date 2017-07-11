@@ -1,9 +1,42 @@
 /* Variables
    ========================================================================== */
 
+* {
+  box-sizing: border-box;
+}
+
 #header-bg {
   background: url('/img/bg.jpeg') no-repeat center;
   background-size: cover;
   height: 400px;
   filter: brightness(.8);
+}
+
+#header-bg span {
+  background-color: rgba(0, 0, 0, .7);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+/*  FROM MAGICMONKEYCSS
+   ========================================================================== */
+
+.pos-abs-middle-center {
+  position: absolute;
+  left: 50%;
+  right: initial;
+  top: 50%;
+  bottom: initial;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.pos-rel {
+  position: relative;
 }

@@ -1,3 +1,9 @@
 /* Variables
    ========================================================================== */
 
+#header-bg {
+  background: url('/img/bg.jpeg') no-repeat center;
+  background-size: cover;
+  height: 400px;
+  filter: brightness(.8);
+}

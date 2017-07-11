@@ -7,6 +7,9 @@
                 </span>
             </div>
         </div>
+        <div id="donnation">
+            <a class="ui button blue " href="">Aidez-nous</a>
+        </div>
         <div class="ui container">
             <div class="ui segment" id="homepage-first-desc">
                 <div class="ui grid">
@@ -30,12 +33,56 @@
 
                 </div>
             </div>
+            <div class="ui equal height grid">
+                <div class="six wide column">
+                    <div class="ui fluid image">
+                        <img src="http://via.placeholder.com/300x200">
+                    </div>
+                </div>
+                <div class="ten wide column stretched">
+                    <div class="ui segment">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur cumque ea earum, est
+                            facere nemo quae quaerat quia tempora tempore vel? Commodi consequatur corporis illo magnam
+                            pariatur praesentium voluptatem.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur cumque ea earum, est
+                            facere nemo quae quaerat quia tempora tempore vel? Commodi consequatur corporis illo magnam
+                            pariatur praesentium voluptatem.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur cumque ea earum, est
+                            facere nemo quae quaerat quia tempora tempore vel? Commodi consequatur corporis illo magnam
+                            pariatur praesentium voluptatem.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <slider :imgList="imgList"></slider>
     </div>
+
 </template>
 
 <script>
+  import Slider from './components/slider/slider.vue'
   export default {
-    name: 'app'
+    name: 'app',
+    data () {
+      return {
+        imgList: [
+          '/img/slider/img1.jpg',
+          '/img/slider/img2.jpg',
+          '/img/slider/img2.jpg',
+          '/img/slider/img2.jpg',
+          '/img/slider/img2.jpg',
+          '/img/slider/img3.jpg'
+        ]
+      }
+    },
+    components: {
+      slider: Slider
+    }
   }
 </script>

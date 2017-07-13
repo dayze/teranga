@@ -72,12 +72,11 @@
     data () {
       return {
         imgList: [
-          '/img/slider/img1.jpg',
-          '/img/slider/img2.jpg',
-          '/img/slider/img2.jpg',
-          '/img/slider/img2.jpg',
-          '/img/slider/img2.jpg',
-          '/img/slider/img3.jpg'
+          '/img/300.jpeg',
+          '/img/300-2.jpeg',
+          '/img/300-3.jpeg',
+          '/img/300-4.jpeg',
+          '/img/300-5.jpeg'
         ]
       }
     },

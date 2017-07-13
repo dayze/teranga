@@ -1,42 +1,52 @@
 <template>
-    <div class="ui container">
-        <div class="slider">
-            <span id="slider-arrow-left"><i class="icon arrow left big"></i></span>
-            <span id="slider-arrow-right"><i class="icon arrow right big"></i></span>
-            <div class="slider-item" v-for="img in imgList">
-                {{ img }}
+            <div class="slider ui segment inverted container fluid">
+                <span id="slider-arrow-left" @click="prev()"><i class="icon arrow left big"></i></span>
+                <span id="slider-arrow-right" @click="next()"><i class="icon arrow right big"></i></span>
+                <div class="ui grid centered">
+                    <div class="slider-item" v-for="(img, index) in imgList">
+                        <img :src="img" alt="" v-if="isBetween(index)">
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+
 </template>
 <script>
   export default{
     props: {
       imgList: {}
+    },
+    methods: {
+      prev: function () {
+        let temp = this.imgList.shift()
+        this.imgList.push(temp)
+      },
+      next: function () {
+        let temp = this.imgList.pop()
+        this.imgList.unshift(temp)
+      },
+      isBetween: function (index) {
+        return index > 0 && index <= 3
+      }
     }
   }
 </script>
 
 <style lang="scss">
+    @mixin arrow {
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        cursor: pointer;
+    }
     .slider {
-        display: flex;
         position: relative;
         #slider-arrow-left{
-            position: absolute;
-            bottom: 50%;
+            @include arrow;
             left: 0;
-            transform: translateY(50%);
         }
         #slider-arrow-right{
-            position: absolute;
-            bottom: 50%;
+            @include arrow;
             right: -3px;
-            transform: translateY(50%);
-        }
-        .slider-item {
-            height: 200px;
-            width: 250px;
-            background-color: red;
         }
     }
 </style>
